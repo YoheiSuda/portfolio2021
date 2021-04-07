@@ -1,8 +1,10 @@
 <template>
-	<div class="bg">
+	<div class="bg" v-bind:class=this.parent>
 		<div class="bg__child01">
 			<ul class="ul01">
-				<li class="li01--gray"></li>
+				<li class="li01--gray">
+					<router-link to="/work">Works</router-link>
+				</li>
 				<li class="li01--yellow"></li>
 				<li class="li01--skyblue"></li>
 				<li class="li01--green"></li>
@@ -45,18 +47,46 @@
 
 <script>
 export default {
-	name: "Background"
+	name: "Background",
+	props : {
+		parent : {
+			type: String,
+			default: 'parent--home'
+		}
+	},
+	data() {
+		return {
+
+		}
+	},
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/css/colorPalette.scss";
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 .bg {
 	position: absolute;
+	padding-top: 96px;
 	width: 100%;
 	height: 100vh;
-
 	.li01--gray {
 		background: $gray01;
 	}
@@ -96,6 +126,24 @@ export default {
 	.li01--black3 {
 		background: $black03;
 	}
+	&.parent--home {
+		li {
+			animation: fadeIn 1s linear 0s forwards;
+		}
+	}
+	&.parent--work {
+		li {
+			animation: fadeOut 1s linear 0s forwards;
+			pointer-events: none;
+		}
+		.bg__child01 {
+			.ul01 {
+				.li01--gray {
+					animation: none;
+				}
+			}
+		}
+	}
 	&__child01 {
 		position: relative;
 		width: 100%;
@@ -109,6 +157,13 @@ export default {
 			> [class^="li01"] {
 				width: calc(100% / 7);
 				height: 100%;
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 32px;
+					height: 100%;
+				}
 			}
 		}
 	}

@@ -1,26 +1,24 @@
 <template>
-  <div id="app">
-    <background></background>
-  </div>
+	<div id="app">
+		<router-view></router-view>
+	</div>
 </template>
 
 <script>
-import Background from "@/components/Background";
 
 export default {
-  name: 'App',
-  components: {
-    Background,
-  }
+	name: 'App',
+	components: {
+	}
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "assets/css/reset.css";
 
 #app {
-  position: relative;
-  width: 100%;
-  height: auto;
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 </style>
