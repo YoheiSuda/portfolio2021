@@ -1,15 +1,15 @@
 <template>
 	<div class="work">
 		<Background parent="parent--work"></Background>
-		<Header></Header>
+		<work-contents></work-contents>
 	</div>
 </template>
 
 <script>
-import Header from "@/components/Header";
 import Background from "@/components/Background";
+import WorkContents from "@/components/Work/WorkContents";
 export default {
 	name: 'Work',
-	components: {Background, Header}
+	components: {WorkContents, Background}
 }
 </script>

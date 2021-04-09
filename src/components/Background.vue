@@ -2,14 +2,18 @@
 	<div class="bg" v-bind:class=this.parent>
 		<div class="bg__child01">
 			<ul class="ul01">
-				<li class="li01--gray">
+				<li class="li01--gray"></li>
+				<li class="li01--yellow">
 					<router-link to="/work">Works</router-link>
 				</li>
-				<li class="li01--yellow"></li>
 				<li class="li01--skyblue"></li>
-				<li class="li01--green"></li>
+				<li class="li01--green">
+					<router-link to="/profile">Profile</router-link>
+				</li>
 				<li class="li01--pink"></li>
-				<li class="li01--red"></li>
+				<li class="li01--red">
+					<router-link to="/skill">Skills</router-link>
+				</li>
 				<li class="li01--blue"></li>
 			</ul>
 		</div>
@@ -84,9 +88,9 @@ export default {
 
 .bg {
 	position: absolute;
-	padding-top: 96px;
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 112px);
+	transition: all 0.3s;
 	.li01--gray {
 		background: $gray01;
 	}
@@ -132,13 +136,42 @@ export default {
 		}
 	}
 	&.parent--work {
+		opacity: 0.2;
 		li {
 			animation: fadeOut 1s linear 0s forwards;
 			pointer-events: none;
 		}
 		.bg__child01 {
 			.ul01 {
-				.li01--gray {
+				.li01--yellow {
+					animation: none;
+				}
+			}
+		}
+	}
+	&.parent--profile {
+		opacity: 0.2;
+		li {
+			animation: fadeOut 1s linear 0s forwards;
+			pointer-events: none;
+		}
+		.bg__child01 {
+			.ul01 {
+				.li01--green {
+					animation: none;
+				}
+			}
+		}
+	}
+	&.parent--skill {
+		opacity: 0.2;
+		li {
+			animation: fadeOut 1s linear 0s forwards;
+			pointer-events: none;
+		}
+		.bg__child01 {
+			.ul01 {
+				.li01--red {
 					animation: none;
 				}
 			}
