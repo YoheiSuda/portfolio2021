@@ -64,6 +64,7 @@ export default {
 <style lang="scss" scoped>
 .workContents {
 	position: relative;
+	top: 112px;
 	width: 900px;
 	margin: auto;
 	padding: 56px 0;

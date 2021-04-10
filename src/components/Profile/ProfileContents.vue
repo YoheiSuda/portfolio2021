@@ -47,6 +47,7 @@ export default {
 <style lang="scss" scoped>
 .profileContents {
 	position: relative;
+	top: 112px;
 	width: 900px;
 	margin: auto;
 	padding: 56px 0;

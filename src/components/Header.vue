@@ -129,10 +129,11 @@ export default {
 	}
 }
 .header {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	padding: 32px;
 	background: #eeeeee;
+	z-index: 999;
 	&__flex {
 		position: relative;
 		display: flex;

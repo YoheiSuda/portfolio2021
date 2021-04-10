@@ -87,7 +87,8 @@ export default {
 }
 
 .bg {
-	position: absolute;
+	position: fixed;
+	margin-top: 112px;
 	width: 100%;
 	height: calc(100vh - 112px);
 	transition: all 0.3s;
