@@ -135,6 +135,8 @@ export default {
 	padding: 32px;
 	background: #eeeeee;
 	z-index: 999;
+	display: flex;
+	align-items: center;
 	&__flex {
 		position: relative;
 		display: flex;
