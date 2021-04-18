@@ -141,6 +141,9 @@ name: "SkillContents"
 			}
 			dd {
 				width: calc(100% - 150px);
+				@media screen and (max-width: 768px) {
+					width: 100%;
+				}
 			}
 		}
 		.dl01 {
