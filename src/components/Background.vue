@@ -199,9 +199,15 @@ export default {
 					height: 100%;
 				}
 			}
+			@media screen and (max-width: 768px) {
+				flex-direction : column;
+				> [class^="li01"] {
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
 	}
-
 	&__child02 {
 		position: relative;
 		width: 100%;
@@ -216,9 +222,15 @@ export default {
 				width: calc(100% / 7);
 				height: 100%;
 			}
+			@media screen and (max-width: 768px) {
+				flex-direction : column;
+				> [class^="li01"] {
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
 	}
-
 	&__child03 {
 		position: relative;
 		width: 100%;
@@ -235,6 +247,14 @@ export default {
 				width: 25%;
 				height: 100%;
 			}
+			@media screen and (max-width: 768px) {
+				flex-direction : column;
+				width: 100%;
+				> [class^="li01"] {
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
 		.ul02 {
 			position: relative;
@@ -245,6 +265,13 @@ export default {
 			> li {
 				width: 50%;
 				height: 100%;
+			}
+			@media screen and (max-width: 768px) {
+				flex-direction : column;
+				> li {
+					width: 100%;
+					height: 50%;
+				}
 			}
 			.li02--blacks {
 				position: relative;

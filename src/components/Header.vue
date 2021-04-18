@@ -131,6 +131,7 @@ export default {
 .header {
 	position: fixed;
 	width: 100%;
+	height: 112px;
 	padding: 32px;
 	background: #eeeeee;
 	z-index: 999;
@@ -151,6 +152,9 @@ export default {
 		}
 		span {
 			font-size: 32px;
+			@media screen and (max-width: 768px) {
+				font-size: 24px;
+			}
 			&.span01 {
 				&::after {
 					content: "須";
