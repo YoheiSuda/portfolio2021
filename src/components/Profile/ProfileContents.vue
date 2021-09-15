@@ -27,13 +27,7 @@
 					<li class="li01">
 						<dl>
 							<dt>趣味：</dt>
-							<dd>音楽制作/プログラミング/デザイン制作</dd>
-						</dl>
-					</li>
-					<li class="li01">
-						<dl class="dl01">
-							<dt>影響を受けた音楽：</dt>
-							<dd>YMO/P-model/mad capsule markets/Number girl/eastern youth/sonic youth/asian kung-fu generation/Beat Crusaders/Elle garden/Dress codes/Tofubeats/長谷川白紙/崎山蒼志</dd>
+							<dd>音楽制作/プログラミング/サイト制作</dd>
 						</dl>
 					</li>
 				</ul>
